@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AlertModule, BsDropdownModule } from 'ngx-bootstrap';
+import { AlertModule, BsDropdownModule, CarouselModule, CollapseModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
 import { MainContentComponent } from './main/main-content/main-content.component';
@@ -13,8 +13,11 @@ import { MainContentComponent } from './main/main-content/main-content.component
   ],
   imports: [
     BrowserModule,
+    // ngx-bootstrap
     AlertModule,
-    BsDropdownModule
+    BsDropdownModule.forRoot(),
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
