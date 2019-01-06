@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AlertModule } from 'ngx-bootstrap';
+import { AlertModule, BsDropdownModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -9,7 +9,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AlertModule
+    AlertModule,
+    BsDropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
