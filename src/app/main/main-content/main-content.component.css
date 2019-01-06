@@ -1,0 +1,8 @@
+* {
+    align-content: center;
+}
+
+#carouselContainer{
+    max-width: 1000px;
+    align-content: center;
+}
