@@ -5,6 +5,7 @@ import { AlertModule, BsDropdownModule, CarouselModule, CollapseModule } from 'n
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
 import { MainContentComponent } from './main/main-content/main-content.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -16,10 +17,11 @@ import { MainContentComponent } from './main/main-content/main-content.component
   imports: [
     BrowserModule,
     // ngx-bootstrap
-    AlertModule,
+    AlertModule.forRoot(),
     BsDropdownModule.forRoot(),
     CarouselModule.forRoot(),
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
