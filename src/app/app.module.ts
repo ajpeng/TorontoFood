@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
 import { MainContentComponent } from './main/main-content/main-content.component';
 import { AppRoutingModule } from './app-routing.module';
-
-
+import { HomeComponent } from './main/components/home/home.component'
+import { RandomRestaurantComponent } from './main/components/random/random.component'
+import { NotFoundComponent } from './main/components/not-found/not-found.component'
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    MainContentComponent
+    MainContentComponent,
+    HomeComponent,
+    RandomRestaurantComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
