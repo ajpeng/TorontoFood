@@ -1,14 +1,18 @@
+import { HttpClient } from 'selenium-webdriver/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { AlertModule, BsDropdownModule, CarouselModule, CollapseModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar/navbar.component';
 import { MainContentComponent } from './main/main-content/main-content.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './main/components/home/home.component'
-import { RandomRestaurantComponent } from './main/components/random/random.component'
-import { NotFoundComponent } from './main/components/not-found/not-found.component'
+import { HomeComponent } from './main/components/home/home.component';
+import { RandomRestaurantComponent } from './main/components/random/random.component';
+import { NotFoundComponent } from './main/components/not-found/not-found.component';
+import { VegetarianFoodComponent } from './main/components/cuisine/vegetarian-food/vegetarian-food.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +20,8 @@ import { NotFoundComponent } from './main/components/not-found/not-found.compone
     MainContentComponent,
     HomeComponent,
     RandomRestaurantComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    VegetarianFoodComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,8 @@ import { NotFoundComponent } from './main/components/not-found/not-found.compone
     BsDropdownModule.forRoot(),
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
